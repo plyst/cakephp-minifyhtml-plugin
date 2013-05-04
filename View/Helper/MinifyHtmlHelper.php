@@ -13,7 +13,6 @@ class MinifyHtmlHelper extends AppHelper {
     }
 
     public function afterLayout($layoutFile = null) {
-
         $this->view->output = $this->minify_html($this->view->output);
     }
 
